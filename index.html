@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/napster-design-system-019ddb89-6a08-7bbb-995b-7661d55f9156/colors_and_type.css">
+  <link rel="stylesheet" href="_ds/napster-design-system-019ddb89-6a08-7bbb-995b-7661d55f9156/tokens/tokens.css">
+  <script src="_ds/napster-design-system-019ddb89-6a08-7bbb-995b-7661d55f9156/_ds_bundle.js"></script>
+  <style>
+    body{margin:0;background:#000;color:#fff;font-family:var(--font-body);-webkit-font-smoothing:antialiased}
+    a{color:#fff;text-decoration:none}
+    a:hover{color:#DD52CB;text-decoration:underline}
+  </style>
+</helmet>
+<div style="background:#000;color:#fff;min-height:100vh;overflow-x:hidden">
+
+  <section data-screen-label="Hero" style="position:relative;min-height:max(100vh,760px);display:flex;flex-direction:column;justify-content:flex-start;align-items:center;overflow:hidden;background:#000">
+    <video autoplay="" muted="" loop="" playsinline="" poster="https://cdn.prod.website-files.com/69ae6251111a514c4038172a/69c4f50e7d0e429ce40330ba_partners-hero-bg.avif" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+      <source src="https://demoassets.touchcast.com/webflow-assets/videos/Partner-Hero-V1.webm" type="video/webm">
+      <source src="https://demoassets.touchcast.com/webflow-assets/videos/partner-hero-v1.mp4" type="video/mp4">
+    </video>
+    <div style="position:absolute;left:0;right:0;top:0;height:100%;max-height:530px;background:linear-gradient(#000,rgba(0,0,0,0));pointer-events:none"></div>
+    <div style="position:absolute;left:0;right:0;bottom:0;height:25rem;background:linear-gradient(rgba(0,0,0,0),#000 85%);pointer-events:none"></div>
+    <div style="position:relative;z-index:1;padding:184px 32px 0;display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px">
+      <p class="eyebrow" style="margin:0;color:#DD52CB">Partner with Napster</p>
+      <h1 style="margin:0;max-width:900px;font-family:var(--font-display);font-weight:600;font-size:clamp(40px,6vw,72px);line-height:0.92;letter-spacing:-1.44px;text-wrap:balance">Bring your superpower. Build what’s next.</h1>
+      <p style="margin:0;max-width:560px;font-size:16px;line-height:1.4;color:rgba(255,255,255,0.85);text-wrap:pretty">Napster brings together exceptional technology, expertise and ideas from around the world to create more value for customers. Whether you introduce exceptional talent and capabilities, extend our ecosystem, or build new growth opportunities with us, there’s a way to partner.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a href="#apply" style="height:48px;padding:0 22px;display:flex;align-items:center;border-radius:10px;background:#BE369D;background-image:linear-gradient(180deg,rgba(255,255,255,0.2),rgba(0,0,0,0.2));color:#fff;font-size:14px;font-weight:600;text-decoration:none" style-hover="filter:brightness(1.05);color:#fff;text-decoration:none">Become a Partner →</a>
+        <a href="#portal" style="height:48px;padding:0 22px;display:flex;align-items:center;border-radius:10px;border:1px solid #BE369D;background:rgba(190,54,157,0.04);backdrop-filter:blur(12px);color:#fff;font-size:14px;font-weight:600;text-decoration:none" style-hover="background:rgba(190,54,157,0.10);color:#fff;text-decoration:none">Partner Portal →</a>
+      </div>
+    </div>
+</section>
+
+  <section data-screen-label="Three ways to partner" style="max-width:1280px;margin:0 auto;padding:120px 32px 40px">
+    <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:56px">
+      <div>
+        <p class="eyebrow" style="margin:0 0 16px">Partnership models</p>
+        <h2 class="h-section" style="margin:0">Three ways to partner.</h2>
+      </div>
+
+    </div>
+
+    <sc-if value="{{ isCards }}" hint-placeholder-val="{{ true }}">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px">
+        <article id="referral" style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,0.10);border-radius:24px;background:rgba(255,255,255,0.04);overflow:hidden;transition:border-color 160ms ease-out" style-hover="border-color:rgba(255,255,255,0.20)">
+          <div style="aspect-ratio:4/3;background:radial-gradient(120% 90% at 15% 0%,#3C185A 0%,#140627 55%,#000 100%)"></div>
+          <div style="padding:32px;display:flex;flex-direction:column;gap:14px;flex:1">
+            <p class="eyebrow" style="margin:0;color:rgba(255,255,255,0.5)">REFERRAL PARTNERS</p>
+            <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:26px;line-height:1.15;letter-spacing:-0.02em;text-wrap:balance">Make the connection. Create the opportunity.</h3>
+            <p class="body" style="margin:0;color:rgba(255,255,255,0.7)">Know an exceptional company, capability or specialist?</p>
+            <p class="body" style="margin:0;color:rgba(255,255,255,0.5)">Introduce them to Napster and help bring new strengths into our ecosystem.</p>
+            <a href="#" style="margin-top:auto;padding-top:12px;font-size:14px;font-weight:600">Explore the Referral Program →</a>
+          </div>
+        </article>
+        <article id="ecosystem" style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,0.10);border-radius:24px;background:rgba(255,255,255,0.04);overflow:hidden;transition:border-color 160ms ease-out" style-hover="border-color:rgba(255,255,255,0.20)">
+          <div style="aspect-ratio:4/3;background:radial-gradient(120% 90% at 15% 0%,#3C185A 0%,#140627 55%,#000 100%)"></div>
+          <div style="padding:32px;display:flex;flex-direction:column;gap:14px;flex:1">
+            <p class="eyebrow" style="margin:0;color:rgba(255,255,255,0.5)">ECOSYSTEM PARTNERS</p>
+            <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:26px;line-height:1.15;letter-spacing:-0.02em">Extend what’s possible.</h3>
+            <p class="body" style="margin:0;color:rgba(255,255,255,0.7)">Bring your technology, services or specialist expertise into the Napster ecosystem.</p>
+            <p class="body" style="margin:0;color:rgba(255,255,255,0.5)">Together, we create stronger solutions, broader capabilities and greater value for customers around the world.</p>
+            <a href="#" style="margin-top:auto;padding-top:12px;font-size:14px;font-weight:600">Explore the ecosystem →</a>
+          </div>
+        </article>
+        <article id="growth" style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,0.10);border-radius:24px;background:rgba(255,255,255,0.04);overflow:hidden;transition:border-color 160ms ease-out" style-hover="border-color:rgba(255,255,255,0.20)">
+          <div style="aspect-ratio:4/3;background:radial-gradient(120% 90% at 15% 0%,#3C185A 0%,#140627 55%,#000 100%)"></div>
+          <div style="padding:32px;display:flex;flex-direction:column;gap:14px;flex:1">
+            <p class="eyebrow" style="margin:0;color:rgba(255,255,255,0.5)">INNOVATION &amp; GROWTH PARTNER PROGRAM</p>
+            <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:26px;line-height:1.15;letter-spacing:-0.02em">Build new value together.</h3>
+            <p class="body" style="margin:0;color:rgba(255,255,255,0.7)">For partners with distinctive capabilities, category expertise, market access or regional strength who want to go further.</p>
+            <p class="body" style="margin:0;color:rgba(255,255,255,0.5)">We work together to turn specialist strengths into new propositions, greater relevance, expanded reach and measurable growth.</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;padding-top:4px">
+              
+              
+              
+            </div>
+            <a href="#" style="margin-top:auto;padding-top:12px;font-size:14px;font-weight:600">Talk to our Partnerships team →</a>
+          </div>
+        </article>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isRows }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;flex-direction:column;border-top:1px solid rgba(255,255,255,0.10)">
+        <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;padding:48px 0;border-bottom:1px solid rgba(255,255,255,0.10);align-items:center">
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <p class="eyebrow" style="margin:0;color:rgba(255,255,255,0.5)">01 · Referral Partners</p>
+            <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:34px;line-height:1.1;letter-spacing:-0.02em">Make the connection. Create the opportunity.</h3>
+            <p class="body" style="margin:0;color:rgba(255,255,255,0.7)">Know an exceptional company, capability or specialist? Introduce them to Napster and help bring new strengths into our ecosystem.</p>
+            <a href="#" style="font-size:14px;font-weight:600">Explore the Referral Program →</a>
+          </div>
+          <div style="width:100%;height:320px;border-radius:24px;background:radial-gradient(120% 90% at 15% 0%,#3C185A 0%,#140627 55%,#000 100%)"></div>
+        </article>
+        <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;padding:48px 0;border-bottom:1px solid rgba(255,255,255,0.10);align-items:center">
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <p class="eyebrow" style="margin:0;color:rgba(255,255,255,0.5)">02 · Ecosystem Partners</p>
+            <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:34px;line-height:1.1;letter-spacing:-0.02em">Extend what’s possible.</h3>
+            <p class="body" style="margin:0;color:rgba(255,255,255,0.7)">Bring your technology, services or specialist expertise into the Napster ecosystem. Together, we create stronger solutions, broader capabilities and greater value for customers around the world.</p>
+            <a href="#" style="font-size:14px;font-weight:600">Explore the ecosystem →</a>
+          </div>
+          <div style="width:100%;height:320px;border-radius:24px;background:radial-gradient(120% 90% at 15% 0%,#3C185A 0%,#140627 55%,#000 100%)"></div>
+        </article>
+        <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;padding:48px 0;border-bottom:1px solid rgba(255,255,255,0.10);align-items:center">
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <p class="eyebrow" style="margin:0;color:rgba(255,255,255,0.5)">03 · Innovation &amp; Growth Partner Program</p>
+            <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:34px;line-height:1.1;letter-spacing:-0.02em">Build new value together.</h3>
+            <p class="body" style="margin:0;color:rgba(255,255,255,0.7)">For partners with distinctive capabilities, category expertise, market access or regional strength who want to go further. We work together to turn specialist strengths into new propositions, greater relevance, expanded reach and measurable growth.</p>
+            <p style="margin:0;font-family:var(--font-display);font-weight:600;font-size:18px">Co-create. Go to market. Grow together.</p>
+            <a href="#" style="font-size:14px;font-weight:600">Talk to our Partnerships team →</a>
+          </div>
+          <div style="width:100%;height:320px;border-radius:24px;background:radial-gradient(120% 90% at 15% 0%,#3C185A 0%,#140627 55%,#000 100%)"></div>
+        </article>
+      </div>
+    </sc-if>
+  </section>
+
+  <section data-screen-label="Global partner ecosystem" style="max-width:1280px;margin:0 auto;padding:120px 32px;box-sizing:border-box">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,560px),1fr));gap:64px;align-items:center">
+      <div style="display:flex;flex-direction:column;gap:24px;max-width:480px">
+        <div>
+        <p class="eyebrow" style="margin:0 0 16px">DIFFERENT STRENGTHS. GREATER REACH.</p>
+        <h2 class="h-section" style="margin: 0; text-wrap: balance; width: 456px; height: 83px">A global partner ecosystem.</h2>
+      </div>
+        <p class="body-lg" style="margin:0;color:rgba(255,255,255,0.6);max-width:520px;text-wrap:pretty">Our partner ecosystem brings together technology, expertise and specialist capabilities across markets and regions.</p>
+        <div style="display:flex;flex-direction:column;border-top:1px solid rgba(255,255,255,0.10);margin-top:8px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.10)"><span style="font-size:14px;font-weight:600">Technology</span><span style="font-size:14px;color:rgba(255,255,255,0.5)">Platforms, devices, infrastructure</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.10)"><span style="font-size:14px;font-weight:600">Expertise</span><span style="font-size:14px;color:rgba(255,255,255,0.5)">Services, consulting, specialist know-how</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.10)"><span style="font-size:14px;font-weight:600">Reach</span><span style="font-size:14px;color:rgba(255,255,255,0.5)">Markets, regions, audiences</span></div>
+        </div>
+        <div style="margin-top:8px"><a href="#" class="btn btn-secondary" style="text-decoration:none">Explore our partners →</a></div>
+      </div>
+      <div style="position:relative;width:100%;max-width:600px;aspect-ratio:1;justify-self:center;container-type:inline-size">
+        <div style="position:absolute;inset:10%;border-radius:50%;background:radial-gradient(circle,rgba(60,24,90,0.55),rgba(20,6,39,0) 70%);filter:blur(40px)"></div>
+        <div style="position:absolute;inset:9%;border-radius:50%;border:1px solid rgba(255,255,255,0.10)"></div>
+        <div style="position:absolute;inset:16%;border-radius:50%;border:1px solid rgba(190,54,157,0.35)"></div>
+        <div style="position:absolute;inset:30%;border-radius:50%;border:1px solid rgba(255,255,255,0.10)"></div>
+        <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:18%;aspect-ratio:1;border-radius:50%;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,0.20),rgba(60,24,90,0.6) 55%,#140627);box-shadow:inset 0 0 0 0.5px rgba(255,255,255,0.35),0 10px 40px rgba(0,0,0,0.35)"><img src="assets/n-mark.svg" alt="Napster" style="width: 111px; display: block; height: 83px"></div>
+          <div style="position:absolute;left:50%;top:16%;transform:translate(-50%,-50%);height:11cqw;padding:0 4.4cqw;display:flex;align-items:center;justify-content:center;border-radius:100px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);box-shadow:inset 0 0 0 0.5px rgba(255,255,255,0.20);backdrop-filter:blur(20px) saturate(1.2);transition:border-color 160ms ease-out" style-hover="border-color:rgba(255,255,255,0.35)"><img src="assets/logos/microsoft.svg" alt="Microsoft" style="max-height:4.4cqw;max-width:18cqw;display:block"></div>
+          <div style="position:absolute;left:79.4%;top:33%;transform:translate(-50%,-50%);height:11cqw;padding:0 4.4cqw;display:flex;align-items:center;justify-content:center;border-radius:100px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);box-shadow:inset 0 0 0 0.5px rgba(255,255,255,0.20);backdrop-filter:blur(20px) saturate(1.2);transition:border-color 160ms ease-out" style-hover="border-color:rgba(255,255,255,0.35)"><img src="assets/logos/lenovo.svg" alt="Lenovo" style="max-height:4.4cqw;max-width:18cqw;display:block"></div>
+          <div style="position:absolute;left:79.4%;top:67%;transform:translate(-50%,-50%);height:11cqw;padding:0 4.4cqw;display:flex;align-items:center;justify-content:center;border-radius:100px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);box-shadow:inset 0 0 0 0.5px rgba(255,255,255,0.20);backdrop-filter:blur(20px) saturate(1.2);transition:border-color 160ms ease-out" style-hover="border-color:rgba(255,255,255,0.35)"><img src="assets/logos/accenture.svg" alt="Accenture" style="max-height:4.4cqw;max-width:18cqw;display:block"></div>
+          <div style="position:absolute;left:50%;top:84%;transform:translate(-50%,-50%);height:11cqw;padding:0 4.4cqw;display:flex;align-items:center;justify-content:center;border-radius:100px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);box-shadow:inset 0 0 0 0.5px rgba(255,255,255,0.20);backdrop-filter:blur(20px) saturate(1.2);transition:border-color 160ms ease-out" style-hover="border-color:rgba(255,255,255,0.35)"><span style="font-family:var(--font-display);font-weight:600;font-size:4.4cqw;letter-spacing:-0.02em;white-space:nowrap">Solgari</span></div>
+          <div style="position:absolute;left:20.6%;top:67%;transform:translate(-50%,-50%);height:11cqw;padding:0 4.4cqw;display:flex;align-items:center;justify-content:center;border-radius:100px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);box-shadow:inset 0 0 0 0.5px rgba(255,255,255,0.20);backdrop-filter:blur(20px) saturate(1.2);transition:border-color 160ms ease-out" style-hover="border-color:rgba(255,255,255,0.35)"><span style="font-family:var(--font-display);font-weight:600;font-size:4.4cqw;letter-spacing:-0.02em;white-space:nowrap">faytech</span></div>
+          <div style="position:absolute;left:20.6%;top:33%;transform:translate(-50%,-50%);height:11cqw;padding:0 4.4cqw;display:flex;align-items:center;justify-content:center;border-radius:100px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);box-shadow:inset 0 0 0 0.5px rgba(255,255,255,0.20);backdrop-filter:blur(20px) saturate(1.2);transition:border-color 160ms ease-out" style-hover="border-color:rgba(255,255,255,0.35)"><img src="assets/logos/leading.svg" alt="Leading Results" style="max-height:4.4cqw;max-width:18cqw;display:block"></div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Napster x Microsoft" style="max-width:1280px;margin:0 auto;padding:0 32px 120px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));border-radius:24px;overflow:hidden;background:#000">
+      <div style="padding:64px 56px;display:flex;flex-direction:column;justify-content:center;gap:20px">
+        <p class="eyebrow" style="margin:0">Napster × Microsoft</p>
+        <h2 class="h-section" style="margin:0;text-wrap:balance">Innovation at ecosystem scale.</h2>
+        <p class="body-lg" style="margin:0;color:rgba(255,255,255,0.65);text-wrap:pretty">See how Napster and Microsoft bring complementary capabilities together to create new experiences, opportunities and customer value.</p>
+        <div style="margin-top:12px"><a href="#" class="btn btn-primary" style="text-decoration:none">Explore Napster × Microsoft →</a></div>
+      </div>
+      <div style="min-height:440px;display:flex;align-items:center;justify-content:center;padding:56px;background:#000"><img src="https://cdn.prod.website-files.com/69ae6251111a514c4038172a/6aa24e1274f1a54c868a990e_napster-microsoft-lockup.avif" alt="Napster × Microsoft — better together" style="width:100%;max-width:420px;height:auto;display:block"></div>
+    </div>
+  </section>
+
+  <section data-screen-label="Partner stories" style="max-width:1280px;margin:0 auto;padding:0 32px 140px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px;align-items:end;margin-bottom:56px">
+      <div>
+        <p class="eyebrow" style="margin:0 0 16px">Partner stories</p>
+        <h2 class="h-section" style="margin:0;text-wrap:balance">Different strengths. Greater outcomes.</h2>
+      </div>
+      <p class="body-lg" style="margin:0;color:rgba(255,255,255,0.6);max-width:520px;text-wrap:pretty">See how Napster and our partners combine expertise, technology and imagination to solve bigger problems.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:20px">
+      <sc-for list="{{ stories }}" as="s" hint-placeholder-count="4">
+        <a href="#" style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,0.10);border-radius:16px;overflow:hidden;background:rgba(255,255,255,0.04);text-decoration:none;color:#fff;transition:border-color 160ms ease-out" style-hover="border-color:rgba(255,255,255,0.20);text-decoration:none;color:#fff">
+          <div style="aspect-ratio:5/4;margin:8px 8px 0;border-radius:10px;background:rgba(255,255,255,0.10);display:flex;align-items:center;justify-content:center"><span style="font-size:12px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:rgba(255,255,255,0.5)">Image placeholder</span></div>
+          <div style="padding:24px;display:flex;flex-direction:column;gap:10px;flex:1">
+            
+            <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:22px;letter-spacing:-0.02em">Napster × {{ s.name }}</h3>
+            <p class="body-sm" style="margin:0;color:rgba(255,255,255,0.6);text-wrap:pretty">{{ s.body }}</p>
+            <span style="margin-top:auto;padding-top:10px;font-size:14px;font-weight:600">Read the story →</span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid rgba(255,255,255,0.10)">
+    <div style="max-width:1280px;margin:0 auto;padding:64px 32px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:40px">
+      <div><img src="assets/napster-logo.svg" alt="Napster" style="height:22px;display:block"></div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:14px">
+        <p class="eyebrow" style="margin:0 0 6px;color:rgba(255,255,255,0.5)">Products</p>
+        <a href="#">Napster App</a><a href="#">Napster View</a><a href="#">Napster Station</a><a href="#">Napster Learn</a><a href="#">Napster API</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:14px">
+        <p class="eyebrow" style="margin:0 0 6px;color:rgba(255,255,255,0.5)">Solutions</p>
+        <a href="#">For Enterprise</a><a href="#">For Developers</a><a href="#">For Partners</a><a href="#">Case Studies</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:14px">
+        <p class="eyebrow" style="margin:0 0 6px;color:rgba(255,255,255,0.5)">Company</p>
+        <a href="#">About</a><a href="#">Newsroom</a><a href="#">Careers</a><a href="#">Events</a><a href="#">Contact Us</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:14px">
+        <p class="eyebrow" style="margin:0 0 6px;color:rgba(255,255,255,0.5)">Resources</p>
+        <a href="#">Security</a><a href="#">Media Kit</a><a href="#">Help Center</a><a href="#">Ethics</a>
+      </div>
+    </div>
+    <div style="max-width:1280px;margin:0 auto;padding:24px 32px 40px;font-size:12px;color:rgba(255,255,255,0.5)">© 2026 Napster. All rights reserved.</div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;pathLayout&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;cards&quot;,&quot;rows&quot;],&quot;default&quot;:&quot;cards&quot;,&quot;tsType&quot;:&quot;'cards'|'rows'&quot;,&quot;section&quot;:&quot;Layout&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const layout = this.props.pathLayout ?? 'cards';
+    const L = (n, f) => ({ name: n, src: 'assets/logos/' + f + '.svg' });
+    return {
+      isCards: layout === 'cards',
+      isRows: layout === 'rows',
+      logos: [L('Microsoft','microsoft'),L('Lenovo','lenovo'),L('Accenture','accenture'),L('Warner Bros.','wb'),L('PIF','pif'),L('UAE Ministry of Finance','uae'),L('DMCC','dmcc'),L("Dick's Sporting Goods",'dicks'),L('Imperial','imperial'),L('Fenerbahçe','fenerbahce'),L('Leading Results','leading')],
+      stories: [
+        { name: 'Microsoft', tag: 'Ecosystem', img: 'assets/story1.avif', body: 'Built natively on Azure, with joint innovation, co-sell and go-to-market across Microsoft verticals.' },
+        { name: 'Leading Results', tag: 'Innovation & Growth', img: 'assets/story2.avif', body: 'Personalised companions for leadership development and executive coaching.' },
+        { name: 'Faytech', tag: 'Innovation & Growth', img: 'assets/story3.avif', body: 'Napster View and Napster Station — embodied companions in kiosks for retail, hospitality and travel.' },
+        { name: 'Solgari', tag: 'Ecosystem', img: 'assets/story4.avif', body: 'Customer engagement across SMS, WhatsApp and voice, on one omnichannel platform.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
