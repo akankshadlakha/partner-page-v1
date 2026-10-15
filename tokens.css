@@ -1,0 +1,146 @@
+/* Napster Design System — CSS Custom Properties
+ * Values extracted from live napster.com (April 2026) and cross-referenced
+ * against Napster's internal brand definition.
+ *
+ * Import into any stylesheet:
+ *   @import url('tokens.css');
+ *
+ * Or reference via CDN once hosted.
+ */
+
+:root {
+  /* ── Core palette ───────────────────────────────────────────────── */
+  --napster-bg:            #000000;
+  --napster-fg:            #FFFFFF;
+  --napster-fg-muted:      rgba(255, 255, 255, 0.5);
+  --napster-fg-subtle:     rgba(255, 255, 255, 0.2);
+
+  /* ── Accent palette — Napster Pink ──────────────────────────────── */
+  /* Use sparingly. One element per composition carries the accent. */
+  --napster-pink:          #DD52CB;   /* primary pink — eyebrows, accent text */
+  --napster-pink-deep:     #BE369D;   /* primary button bg */
+  --napster-pink-bright:   #EA2DD2;   /* gradient peak */
+  --napster-pink-rim:      #FFA1F3;   /* button borders, gradient end */
+  --napster-pink-glow:     #FF10E8;   /* neon glow on logo heroes */
+  --napster-plum-deep:     #601656;   /* gradient anchor */
+  --napster-plum-panel:    #4E1640;   /* pink-tinted panel */
+
+  /* ── Atmospheric accents ────────────────────────────────────────── */
+  --napster-indigo:        #33295C;
+  --napster-coral:         #FF4D6D;
+  --napster-charcoal:      #202226;
+  --napster-violet-deep:   #3C185A;
+  --napster-violet-mid:    #370971;
+
+  /* ── Semantic ───────────────────────────────────────────────────── */
+  --napster-good:          #34D399;
+  --napster-bad:           #FF6B7A;
+  --napster-neutral:       #C8C8E0;
+
+  /* ── Signature gradients ────────────────────────────────────────── */
+  --napster-gradient-hero:
+    linear-gradient(90deg,
+      #FFFFFF 0%,
+      #EA2DD2 71.63%,
+      #FFA1F3 87.98%);
+
+  --napster-gradient-label:
+    linear-gradient(91deg,
+      #DD52CB 0%,
+      #601656 100%);
+
+  /* Atmospheric background gradients */
+  --napster-gradient-bg-1: linear-gradient(180deg, #140627 0%, #3C185A 100%);
+  --napster-gradient-bg-2: linear-gradient(180deg, #370971 0%, #591B5A 100%);
+  --napster-gradient-bg-3: linear-gradient(180deg, #130522 0%, #2C0C36 100%);
+  --napster-gradient-bg-4: linear-gradient(180deg, #3D1226 0%, #040205 100%);
+
+  /* ── Typography ─────────────────────────────────────────────────── */
+  --napster-font-display:  'Avantt', 'Arial', sans-serif;
+  --napster-font-body:     'Inter', sans-serif;
+
+  /* Type scale (px, from live napster.com) */
+  --fs-hero:               72px;
+  --fs-section:            41px;
+  --fs-title:              32px;
+  --fs-subtitle:           24px;
+  --fs-body-lg:            18px;
+  --fs-body:               16px;
+  --fs-body-sm:            14px;
+  --fs-eyebrow:            12px;
+  --fs-meta:               11px;
+
+  /* Weights */
+  --fw-regular:            400;
+  --fw-medium:             500;
+  --fw-semibold:           600;
+  --fw-bold:               700;
+  --fw-extrabold:          800;
+
+  /* Letter spacing */
+  --ls-hero:               -1.44px;  /* -2% at 72px */
+  --ls-section:            -0.82px;  /* -2% at 41px */
+  --ls-eyebrow:            -0.12px;  /* matches live */
+
+  /* Line heights */
+  --lh-tight:              0.95;
+  --lh-headline:           1.1;
+  --lh-body:               1.4;
+
+  /* ── Radii ──────────────────────────────────────────────────────── */
+  --r-xs:                  4px;
+  --r-sm:                  6px;
+  --r-md:                  10px;   /* standard — buttons */
+  --r-lg:                  16px;   /* cards */
+  --r-xl:                  24px;   /* large cards */
+  --r-pill:                100px;
+  --r-full:                9999px;
+
+  /* ── Spacing scale ──────────────────────────────────────────────── */
+  --space-1:               4px;
+  --space-2:               8px;
+  --space-3:               12px;
+  --space-4:               16px;
+  --space-5:               20px;
+  --space-6:               24px;
+  --space-8:               32px;
+  --space-10:              40px;
+  --space-12:              48px;
+  --space-16:              64px;
+
+  /* ── Panels ─────────────────────────────────────────────────────── */
+  --panel-fill:            rgba(255, 255, 255, 0.04);
+  --panel-border:          1px solid rgba(255, 255, 255, 0.10);
+  --panel-fill-pink:       rgba(190, 54, 157, 0.08);
+  --panel-border-pink:     1px solid rgba(190, 54, 157, 0.35);
+
+  /* ── Button — primary ───────────────────────────────────────────── */
+  --btn-primary-bg:        var(--napster-pink-deep);
+  --btn-primary-fg:        var(--napster-fg);
+  --btn-primary-padding:   18.5px 20px;
+  --btn-primary-radius:    var(--r-md);
+
+  /* ── Button — secondary (glass) ─────────────────────────────────── */
+  --btn-secondary-bg:      rgba(190, 54, 157, 0.02);
+  --btn-secondary-fg:      var(--napster-fg);
+  --btn-secondary-border:  1px solid rgba(255, 161, 243, 0.2);
+
+  /* ── Shadows ────────────────────────────────────────────────────── */
+  --shadow-panel:          0 4px 20px rgba(0, 0, 0, 0.25);
+  --shadow-glow-pink:      0 0 40px rgba(255, 16, 232, 0.35);
+  --shadow-inset-light:    inset 0 0 0.5px rgba(255, 255, 255, 0.5);
+
+  /* ── Backdrop filters ───────────────────────────────────────────── */
+  --blur-panel:            blur(20px) saturate(1.2);
+  --blur-atmospheric:      blur(100px);
+}
+
+/* ── Base body defaults ───────────────────────────────────────────── */
+html, body {
+  background-color: var(--napster-bg);
+  color: var(--napster-fg);
+  font-family: var(--napster-font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+}

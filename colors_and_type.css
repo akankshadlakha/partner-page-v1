@@ -1,0 +1,282 @@
+/* Napster Design System — Colors + Type
+ * Single-file token reference for AI design tools.
+ * Values verified against napster.com (April 2026) and Napster's brand definition.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+/* Display face: Avantt (Napster Sans). Licensed from Displaay.
+ * Self-hosted in /fonts. Weights: 500 Medium, 600 SemiBold, 700 Bold, 800 ExtraBold.
+ * Poppins is the documented public fallback. */
+@font-face {
+  font-family: 'Avantt';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/Avantt-Medium.woff2') format('woff2'),
+       url('fonts/Avantt-Medium.woff')  format('woff'),
+       url('fonts/Avantt-Medium.otf')   format('opentype'),
+       url('fonts/Avantt-Medium.ttf')   format('truetype');
+}
+@font-face {
+  font-family: 'Avantt';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/Avantt-SemiBold.woff2') format('woff2'),
+       url('fonts/Avantt-SemiBold.woff')  format('woff'),
+       url('fonts/Avantt-SemiBold.otf')   format('opentype'),
+       url('fonts/Avantt-SemiBold.ttf')   format('truetype');
+}
+@font-face {
+  font-family: 'Avantt';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/Avantt-Bold.otf') format('opentype'),
+       url('fonts/Avantt-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Avantt';
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/Avantt-ExtraBold.otf') format('opentype'),
+       url('fonts/Avantt-ExtraBold.ttf') format('truetype');
+}
+
+:root {
+  /* ─────────────────────────────────────────────────────────────
+     CORE PALETTE
+     ───────────────────────────────────────────────────────────── */
+  --bg:            #000000;   /* Pure black. Default canvas. */
+  --bg-panel:      rgba(255, 255, 255, 0.04);
+  --bg-plum:       #130522;   /* Deep plum — atmospheric anchor */
+  --bg-charcoal:   #202226;   /* Dark charcoal panel */
+
+  --fg:            #FFFFFF;   /* Primary text */
+  --fg-muted:      rgba(255, 255, 255, 0.5);
+  --fg-subtle:     rgba(255, 255, 255, 0.2);
+
+  /* ─────────────────────────────────────────────────────────────
+     NAPSTER PINK — signature accent
+     Use sparingly. ONE element per composition carries it,
+     and that element is the load-bearing noun.
+     ───────────────────────────────────────────────────────────── */
+  --pink:          #DD52CB;   /* eyebrows, accent text */
+  --pink-deep:     #BE369D;   /* primary button fill */
+  --pink-bright:   #EA2DD2;   /* gradient peak */
+  --pink-rim:      #FFA1F3;   /* button borders, gradient end */
+  --pink-glow:     #FF10E8;   /* neon glow on logo heroes */
+  --plum-deep:     #601656;   /* gradient anchor */
+  --plum-panel:    #4E1640;   /* pink-tinted panel fill */
+
+  /* Atmospheric accents */
+  --indigo:        #33295C;
+  --coral:         #FF4D6D;
+  --violet-deep:   #3C185A;
+  --violet-mid:    #370971;
+
+  /* Semantic (data viz) */
+  --good:          #34D399;
+  --bad:           #FF6B7A;
+  --neutral:       #C8C8E0;
+
+  /* ─────────────────────────────────────────────────────────────
+     SIGNATURE GRADIENTS
+     ───────────────────────────────────────────────────────────── */
+
+  /* Hero accent text — apply to the LOAD-BEARING NOUN only.
+     e.g. "A specialist for every [moment.]" */
+  --gradient-hero:
+    linear-gradient(90deg,
+      #FFFFFF 0%,
+      #EA2DD2 71.63%,
+      #FFA1F3 87.98%);
+
+  /* Small-label gradient — for eyebrow-size callouts */
+  --gradient-label:
+    linear-gradient(91deg, #DD52CB 0%, #601656 100%);
+
+  /* Atmospheric background gradients — default bg remains #000 */
+  --gradient-bg-plum:    linear-gradient(180deg, #140627 0%, #3C185A 100%);
+  --gradient-bg-violet:  linear-gradient(180deg, #370971 0%, #591B5A 100%);
+  --gradient-bg-near:    linear-gradient(180deg, #130522 0%, #2C0C36 100%);
+  --gradient-bg-rose:    linear-gradient(180deg, #3D1226 0%, #040205 100%);
+
+  /* ─────────────────────────────────────────────────────────────
+     TYPOGRAPHY
+     ───────────────────────────────────────────────────────────── */
+  --font-display:  'Avantt', 'Poppins', 'Arial', sans-serif;   /* Napster Sans (Avantt internal-only; Poppins is the public fallback) */
+  --font-body:     'Inter', system-ui, sans-serif;
+
+  /* Type scale (px, from live napster.com) */
+  --fs-display:    180px;  /* cover/section dividers only */
+  --fs-hero:       72px;
+  --fs-section:    41px;
+  --fs-title:      32px;
+  --fs-subtitle:   24px;
+  --fs-body-lg:    18px;
+  --fs-body:       16px;
+  --fs-body-sm:    14px;
+  --fs-eyebrow:    12px;
+  --fs-meta:       11px;
+
+  /* Weights */
+  --fw-regular:    400;
+  --fw-medium:     500;
+  --fw-semibold:   600;
+  --fw-bold:       700;
+  --fw-extrabold:  800;
+
+  /* Letter spacing */
+  --ls-hero:       -0.02em;  /* -1.44px @ 72px */
+  --ls-section:    -0.02em;
+  --ls-eyebrow:    -0.01em;  /* -0.12px @ 12px */
+
+  /* Line heights */
+  --lh-tight:      0.95;
+  --lh-headline:   1.1;
+  --lh-body:       1.4;
+
+  /* ─────────────────────────────────────────────────────────────
+     RADII — The Circle is the visual backbone. Round everything.
+     ───────────────────────────────────────────────────────────── */
+  --r-xs:    4px;
+  --r-sm:    6px;
+  --r-md:    10px;    /* ⭐ buttons — most common */
+  --r-lg:    16px;    /* ⭐ cards */
+  --r-xl:    24px;    /* large cards */
+  --r-pill:  100px;
+  --r-full:  9999px;
+
+  /* ─────────────────────────────────────────────────────────────
+     SPACING
+     ───────────────────────────────────────────────────────────── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* ─────────────────────────────────────────────────────────────
+     EFFECTS
+     ───────────────────────────────────────────────────────────── */
+  --shadow-panel:       0 10px 40px rgba(0, 0, 0, 0.35);
+  --shadow-glow-pink:   0 0 40px rgba(255, 16, 232, 0.35);
+  --shadow-inset-light: inset 0 0 0 0.5px rgba(255, 255, 255, 0.35);
+
+  --blur-panel:         blur(20px) saturate(1.2);
+  --blur-atmospheric:   blur(100px);
+
+  --panel-border:       1px solid rgba(255, 255, 255, 0.10);
+  --panel-border-pink:  1px solid rgba(190, 54, 157, 0.35);
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   SEMANTIC TYPE CLASSES
+   Use these in HTML/JSX to stay on-brand automatically.
+   ───────────────────────────────────────────────────────────────── */
+
+html, body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Eyebrow — the signature Napster element. UPPERCASE, pink, Inter 700. */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--fs-eyebrow);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--pink);
+}
+
+/* Hero — 72px Avantt 600, sentence case, ends with a period. */
+.h-hero {
+  font-family: var(--font-display);
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-headline);
+  letter-spacing: var(--ls-hero);
+  color: var(--fg);
+}
+
+/* Section headline — 41px */
+.h-section {
+  font-family: var(--font-display);
+  font-size: var(--fs-section);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-headline);
+  letter-spacing: var(--ls-section);
+}
+
+/* Gradient-clipped word — apply to the LOAD-BEARING NOUN only */
+.gradient-word {
+  background: var(--gradient-hero);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Body text */
+.body-lg  { font-size: var(--fs-body-lg); line-height: 1.5; }
+.body     { font-size: var(--fs-body);    line-height: var(--lh-body); }
+.body-sm  { font-size: var(--fs-body-sm); line-height: var(--lh-body); color: var(--fg-muted); }
+.muted    { color: var(--fg-muted); }
+.subtle   { color: var(--fg-subtle); }
+
+/* ─────────────────────────────────────────────────────────────────
+   BUTTONS — 10px radius, 18.5px × 20px padding, Inter 14px 600
+   ───────────────────────────────────────────────────────────────── */
+.btn {
+  font-family: var(--font-body);
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-semibold);
+  border-radius: var(--r-md);
+  padding: 18.5px 20px;
+  border: none;
+  cursor: pointer;
+  color: var(--fg);
+  transition: background 120ms ease, transform 120ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-primary   { background: var(--pink-deep); }
+.btn-primary:hover   { background: #CB42AC; }
+.btn-primary:active  { transform: scale(0.98); }
+
+.btn-secondary {
+  background: rgba(190, 54, 157, 0.02);
+  border: 1px solid rgba(255, 161, 243, 0.2);
+}
+.btn-secondary:hover { background: rgba(190, 54, 157, 0.08); }
+
+/* ─────────────────────────────────────────────────────────────────
+   PANELS / CARDS
+   ───────────────────────────────────────────────────────────────── */
+.panel {
+  background: var(--bg-panel);
+  border: var(--panel-border);
+  border-radius: var(--r-lg);
+  backdrop-filter: var(--blur-panel);
+  box-shadow: var(--shadow-inset-light), var(--shadow-panel);
+}
+.panel-pink {
+  background: rgba(190, 54, 157, 0.08);
+  border: var(--panel-border-pink);
+  border-radius: var(--r-lg);
+}
